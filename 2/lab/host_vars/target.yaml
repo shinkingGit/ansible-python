@@ -1,13 +1,10 @@
 cider: 24
 dns: 172.25.0.2
 firewalls:
-- 1
-- 2
-- 3
-- 4
-- 5
+- mysql
+- ntp
 gateway: 172.25.2.1
-hostanme: target
+hostname: target
 ip: 172.25.2.70
 packages:
 - mariadb

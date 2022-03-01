@@ -62,7 +62,7 @@ def main():
     logger.debug(services)
 
     # セキュリティファイアウォール(インバウンド許可リスト)の取得
-    firewalls = getlist(sheet,row_no=30,col_no=2,max_row_no=35)
+    firewalls = getlist(sheet,row_no=30,col_no=3,max_row_no=35)
     logger.debug(firewalls)
 
     # 追加ユーザリストの取得
@@ -82,7 +82,7 @@ def main():
 
     # yaml 出力データの整形
     out_data = {
-      'hostanme': hostname.value,
+      'hostname': hostname.value,
       'ip': ip.value,
       'cider': cider.value,
       'gateway': gateway.value,
