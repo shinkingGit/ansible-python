@@ -1,0 +1,23 @@
+cider: 24
+dns: 172.25.0.2
+firewalls:
+- 1
+- 2
+- 3
+- 4
+- 5
+gateway: 172.25.2.1
+hostanme: control
+ip: 172.25.2.52
+packages:
+- httpd
+- php
+- chrony
+services:
+- httpd
+- chrony
+users:
+- comment: WebAdminUser
+  name: webadmin
+- comment: ContentUPLoadUser
+  name: upadmin

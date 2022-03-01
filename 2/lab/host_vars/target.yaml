@@ -1,0 +1,18 @@
+cider: 24
+dns: 172.25.0.2
+firewalls:
+- 1
+- 2
+- 3
+- 4
+- 5
+gateway: 172.25.2.1
+hostanme: target
+ip: 172.25.2.70
+packages:
+- mariadb
+services:
+- mariadb
+users:
+- comment: DBAdminUser
+  name: dbadmin
