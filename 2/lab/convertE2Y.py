@@ -9,14 +9,11 @@ from rich.logging import RichHandler
 # ストリームハンドラの設定とファイルハンドラの設定
 rich_handler: RichHandler = RichHandler(rich_tracebacks=True)
 rich_handler.setFormatter(logging.Formatter("%(asctime)s:%(lineno)d:%(levelname)s:%(message)s"))
-
 # ファイルハンドラの設定(ログファイル出力先を設定)
 logfile = logging.FileHandler('converte2y.log')
 logfile.setFormatter(logging.Formatter("%(asctime)s:%(lineno)d:%(levelname)s:%(message)s"))
-
 # ログレベルの設定とハンドラの関連づけ
 logging.basicConfig(level=logging.INFO, handlers=[rich_handler,logfile])
-
 # Logger名の指定
 logger = logging.getLogger(__name__)
 
